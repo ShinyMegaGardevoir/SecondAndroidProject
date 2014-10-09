@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   
+    <Button
+        android:id="@+id/FirstButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/SillyString" />
+
+    <TextView
+        android:id="@+id/wordsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FirstButton"
+        android:layout_alignLeft="@+id/FirstButton"
+        android:layout_marginBottom="48dp"
+        android:text="@string/otherString"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
