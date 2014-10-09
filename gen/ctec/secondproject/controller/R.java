@@ -858,10 +858,17 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f07000a;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int aquaBlue=0x7f070008;
+        public static final int black=0x7f070005;
+        public static final int forestGreen=0x7f070009;
+        public static final int pink=0x7f070003;
+        public static final int rivertonPurple=0x7f070007;
+        public static final int uglyBrown=0x7f070004;
+        public static final int white=0x7f070006;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1071,7 +1078,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int FirstButton=0x7f05003d;
+        public static final int FirstButton=0x7f05003c;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1086,7 +1093,6 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int boringTextView=0x7f05003c;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1133,6 +1139,7 @@ containing a value of this type.
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
+        public static final int wordsView=0x7f05003d;
     }
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within

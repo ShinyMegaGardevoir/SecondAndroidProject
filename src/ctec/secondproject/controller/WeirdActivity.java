@@ -1,5 +1,7 @@
 package ctec.secondproject.controller;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +14,7 @@ public class WeirdActivity extends Activity
 {
 	private Button appButton;
 	private TextView appText;
+	private ArrayList<Integer> colorList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -21,11 +24,25 @@ public class WeirdActivity extends Activity
 		
 		appButton = (Button) findViewById(R.id.FirstButton);
 		appText = (TextView) findViewById(R.id.boringTextView);
+		colorList = new ArrayList<Integer>();
+		
+		fillTheColorList();
 		
 		setupListeners();
 	}
 	
-	private void setupListeners()
+	private void fillTheColorList()
+	{
+		colorList.add(R.color.rivertonPurple);
+		colorList.add(R.color.pink);
+		colorList.add(R.color.black);
+		colorList.add(R.color.white);
+		colorList.add(R.color.aquaBlue);
+		colorList.add(R.color.uglyBrown);
+		colorList.add(R.color.forestGreen);
+		
+	}
+    private void setupListeners()
 	{
 		appButton.setOnClickListener(new View.OnClickListener()
 		{
@@ -35,6 +52,8 @@ public class WeirdActivity extends Activity
 			{
 				//Button click stuff goes here
 				appButton.setBackgroundResource(R.color.uglyBrown);
+				
+				appButton.setBackgroundResource(colorList.get(randomIndex));
 			}
 		});
 	}
