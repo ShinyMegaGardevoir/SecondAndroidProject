@@ -1078,7 +1078,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int FirstButton=0x7f05003c;
+        public static final int FirstButton=0x7f05003d;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1092,6 +1092,7 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f050024;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
+        public static final int appLayout=0x7f05003c;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
@@ -1139,7 +1140,7 @@ containing a value of this type.
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
-        public static final int wordsView=0x7f05003d;
+        public static final int wordsView=0x7f05003e;
     }
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within

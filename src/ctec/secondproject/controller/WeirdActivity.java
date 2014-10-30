@@ -1,6 +1,7 @@
 package ctec.secondproject.controller;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class WeirdActivity extends Activity
@@ -16,6 +18,7 @@ public class WeirdActivity extends Activity
 	private TextView appText;
 	private ArrayList<Integer> colorList;
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -23,7 +26,7 @@ public class WeirdActivity extends Activity
 		setContentView(R.layout.activity_weird);
 		
 		appButton = (Button) findViewById(R.id.FirstButton);
-		appText = (TextView) findViewById(R.id.boringTextView);
+		appText = (TextView) findViewById(R.id.wordsView);
 		colorList = new ArrayList<Integer>();
 		
 		fillTheColorList();
@@ -51,9 +54,9 @@ public class WeirdActivity extends Activity
 			public void onClick(View currentView)
 			{
 				//Button click stuff goes here
-				appButton.setBackgroundResource(R.color.uglyBrown);
 				
-				appButton.setBackgroundResource(colorList.get(randomIndex));
+				appButton.setBackgroundResource(colorList.get(new Random().nextInt(colorList.size())));
+				findViewById(R.id.appLayout).setBackgroundResource(colorList.get(new Random().nextInt(colorList.size())));
 			}
 		});
 	}
